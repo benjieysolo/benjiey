@@ -106,7 +106,17 @@
 				word-wrap: wrap;
 			}
 
-			
+			#instagram {
+				font-weight: bold;
+				background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				color: transparent;
+				text-decoration: none;
+				text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+			}
+
 			@media (max-width: 768px) {
 				#nav_interruptor {
 					display: flex;
@@ -133,7 +143,7 @@
 					width: 100%;
 					text-align: center;
 				}
-				
+
 				img {
 					max-width: 100%;
 					display: block;
@@ -152,11 +162,11 @@
 					<span class="barra"></span>
 				</button>
 				<nav id="nav_menu">
-					<a href="">Materia</a>
-					<a href="">Va</a>
-					<a href="">a</a>
-					<a href="">Llegar</a>
-					<a href="">Eventualmente</a>
+					<a href="./">Inicio</a>
+					<a href="./autobiografia.html">Autobiografia</a>
+					<a href="./espanol.html">Español</a>
+					<a href="./cv.html">C.V.</a>
+					<div><a href="https://www.instagram.com/benjieysolo/" id="instagram">Instagram</a></div>
 				</nav>
 			</div>
 		</header>
@@ -166,16 +176,16 @@
 		<section id="sobre_mi">
 			<div id="sobre_mi_contenedor">
 				<h2>Hola. Me llamo Benjamin Solomon y es un placer conconcerse.</h2>
-				<p>Bienvenidos a <b>mi sitio de web</b> y sientase libre de explorar. Soy el hombre situado arriba en la foto, luciendo increible. Esto fue cuando estaba en la cima del volcan mas alto de Centroamerica. No uso accentos cuando escribo asi que usted adivinara lo que quise decir.</p>
+				<p>Bienvenidos a <b>mi sitio de web</b> y sientase libre de explorar. Soy el hombre situado arriba en la foto, luciendo increible. Esto fue cuando estaba en la cima del volcan mas alto de Centroamerica.<br><br><hr><br><br>No uso accentos cuando escribo asi que usted adivinara lo que quise decir.</p>
 			</div>
 		</section>
-		<script type="text/javascript">
-			const toggle = document.querySelector`#nav_interruptor`;
-			const menu = document.querySelector`#nav_menu`;
+	<script type="text/javascript">
+		const toggle = document.querySelector`#nav_interruptor`;
+		const menu = document.querySelector`#nav_menu`;
 
-			toggle.addEventListener("click", () => {
-				menu.classList.toggle`abierto`;
-			});
-		</script>
+		toggle.addEventListener("click", () => {
+			menu.classList.toggle`abierto`;
+		});
+	</script>
 	</body>
 </html>
